@@ -22,17 +22,19 @@
                         }
                     }
                 }
-                return arr3;
-                console.log(checkifSame(arr3, arr1));
+                return checkifSame(arr1, arr3);
                 function checkifSame(arrr, arrr2){
-                    return console.log(arr1);
-                    return console.log(arr3); 
+                    if(arrr.join("")==arrr2.join("")){
+                        return console.log("are anagram");   
+                    }else{
+                        return console.log("not anagram");
+                    }
                 }
             }else{
                 console.log("anagram words must be of equal length");
             }
         }
-        console.log(checkAnagram("war", "raw"));
+        console.log(checkAnagram("war","raw"));
     </script>
 </body>
 </html>
